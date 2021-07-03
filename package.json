@@ -1,23 +1,26 @@
 {
-  "name": "bgg",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TMCMTB/bgg.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TMCMTB/bgg/issues"
-  },
-  "homepage": "https://github.com/TMCMTB/bgg#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+    "name": "bgg",
+    "version": "1.0.0",
+    "description": "",
+    "main": "make.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon make.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TMCMTB/bgg.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/TMCMTB/bgg/issues"
+    },
+    "homepage": "https://github.com/TMCMTB/bgg#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "hbs": "^4.1.2",
+        "nodemon": "^2.0.9"
+    }
 }
