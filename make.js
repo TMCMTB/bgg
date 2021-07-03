@@ -18,8 +18,31 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-    console.log(req.body)
-    res.render("app")
+    console.log(req.body);
+
+    const { principalAmount, interestRate, timeInYears, compoundingFrequency } = req.body;
+
+    let P = principalAmount
+    let r = interestRate * 100
+    let n = compoundingFrequency
+    let T = timeInYears
+    let a = 1 + (r / n)
+    let b = n * T
+    let x = Math.pow(a, b);
+    let CI = P * x
+    console.log(CI)
+
+    return res.render('result', {
+        result: CI,
+        PI: principalAmount,
+        IR: interestRate,
+        CF: compoundingFrequency,
+        TIY: timeInYears,
+
+    })
+
+
+
 })
 
 app.listen(5500, () => {
