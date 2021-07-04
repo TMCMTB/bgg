@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compound Calculator</title>
+
+    <link rel="stylesheet" href="/style1.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">Calculator</div>
+            <div class="card-body">
+                <form action="/" method="post">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <label for="principalAmount" class="form-label">PRINCIPAL AMOUNT</label>
+                            <input type="text" class="form-control" id="principalAmount" value="{{PI}}" name="principalAmount">
+                        </div>
+                        <div class="col-6">
+                            <label for="interestRate" class="form-label">INTEREST RATE</label>
+                            <input type="text" class="form-control" id="interestRate" value="{{IR}}" name="interestRate">
+                        </div>
+                        <div class="col-6">
+                            <label for="timeInYears" class="form-label">TIME IN YEARS</label>
+                            <input type="text" class="form-control" id="timeInYears"  value="{{TIY}}" name="timeInYears">
+                        </div>
+                        <div class="col-6">
+                            <label for="compoundingFrequency" class="form-label">COMPOUNDING FREQUENCY</label>
+                            <input type="text" class="form-control" id="compoundingFrequency" value="{{CF}}" name="compoundingFrequency">
+                        </div>
+
+                        <div class="mb-3">
+                            <ul>
+                                <li><a class="btn btn-primary " href="/" role="button">RESET</a></li>
+                                <li><a class="btn btn-primary " href="#" role="button">EXIT</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <strong>Your Compound Interst is:{{result}}</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+        
+    
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
